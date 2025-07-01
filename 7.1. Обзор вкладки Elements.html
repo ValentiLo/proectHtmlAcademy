@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{list-style: none;}
+        ul li::before {
+    content: "– "; /* Вот и наше тире */
+    padding-right: 5px; /* А здесь обеспечим утончённый отступ для тире */
+}
+img{width: 90%;margin:0 auto;}
+    </style>
+</head>
+<body>
+    <h1>7.1. Обзор вкладки Elements</h1>
+<p>После полной загрузки страницы браузер создаёт объектную модель документа (Document Object Model), 
+    в которой хранится дерево элементов страницы. Для навигации по DOM-дереву в DevTools предусмотрена вкладка Elements.</p>
+    <p>
+        <figure><img src="08-03-elements-dom.png" alt="Рисунок 1. DOM на вкладке Elements"><figcaption>Рисунок 1. DOM на вкладке Elements</figcaption></figure>
+    </p>
+    <p>Стоит учитывать, что DOM генерируется в процессе загрузки страницы и хоть он визуально похож на разметку — на самом деле ей не является. В процессе генерации DOM могут быть исправлены некоторые ошибки разметки и добавлены новые элементы с помощью JavaScript.</p>
+    <p>Посмотреть разметку страницы можно по клику на произвольной области экрана правой кнопкой мыши → «Просмотр кода страницы».</p>
+    <video controls width="1050">
+        <source src="08-03-DOM.mp4" type="video/mp4" />
+    </video>
+<p>На примере видно, что при генерации DOM в table появились обязательные теги tbody и tr, появился закрывающий тег у form, также с помощью JavaScript на странице появились чекбоксы и заголовок, но сама разметка при этом осталась в исходном состоянии.</p>
+<h1>Возможности</h1>
+<p>
+Кнопка inspect позволяет выбрать элемент на странице с помощью мыши.</p>
+ <p>
+        <figure><img src="08-03-inspect.png" alt="Рисунок 2. Кнопка Inspect"><figcaption>Рисунок 2. Кнопка Inspect</figcaption></figure>
+    </p>
+    <h1>Альтернативные способы выбора элемента:</h1>
+<p>
+    <ul>
+        <li>Правый клик по элементу → Просмотреть код (Inspect).</li>
+        <li>Комбинация клавиш — Command+Option+C (macOS) или Control+Shift+C (Windows, Linux) + клик по элементу. <video controls width="1050">
+        <source src="08-03-point-and-click.mp4" type="video/mp4" />
+    </video></li>
+    <li>
+        Кнопка переключения Device Toolbar используется для оценки того, как страница выглядит и работает на мобильном устройстве. Об этой возможности поговорим отдельно.
+    </li>
+    <p>
+        <figure><img src="08-03-device-toolbar.png" alt="Рисунок 3. Кнопка переключения Device Toolbar"><figcaption>Рисунок 3. Кнопка переключения Device Toolbar</figcaption></figure>
+    </p>
+    </ul>
+</p>
+   <h1>Секция с вкладками в правой боковой панели DevTools</h1>
+<ul>
+    <li>Styles — выводит и позволяет редактировать стили элемента, включая наследуемые от родительских элементов, 
+        показывает блочную модель элемента.
+</li>
+    <li>Computed — на этой вкладке перечислены только стили, которые отображаются на экране. 
+Все относительные единицы будут пересчитаны в пиксели.</li>
+<p><video controls width="1050">
+        <source src="08-03-computed.mp4" type="video/mp4" />
+    </video>
+</p>
+<li>Layout — предоставляет наглядное отображение всех CSS grid сеток на странице. Подробнее в документации по Chrome DevTools.</li>
+<li>Event Listeners — выводит обработчики событий элемента.</li>
+<li>DOM Breakpoints — используется для остановки кода, который изменяет выбранный элемент или его детей. Подробнее в документации по Chrome DevTools.</li>
+<li>Properties — выводит все доступные свойства элемента.
+<li>Accessibility — позволяет проверять каждый элемент по метрикам доступности. Подробнее в документации по Chrome DevTools.</li>
+</li>
+</ul>
+<h3>Статьи по теме в блоге Академии:</h3>
+<p>
+    
+<a href="https://htmlacademy.ru/blog/soft/chrome-devtools-1">Введение в Chrome DevTools. Панель Elements</a>
+
+
+</p>
+<p><a href="https://htmlacademy.ru/blog/soft/chrome-devtools-2">Введение в Chrome DevTools. Console, Sources, Network</a></p>
+
+
+  <p><a href="index.html">На главную</a></p>  
+   
+    
+</body>
+</html>

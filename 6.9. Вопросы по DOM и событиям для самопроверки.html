@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>6.9. Вопросы по DOM и событиям для самопроверки</h1>
+    <h2>DOM</h2>
+    <details>
+  <summary>Что такое DOM?</summary>
+  <p>DOM (Document Object Model) — это объектная модель документа, DOM описывает HTML-структуру объектами JS. </p>
+<p>DOM — это сверхточное отражение разметки.
+</p>
+</details>
+
+ <details>
+    <summary>Как получить доступ к тегу <body> из JS?</summary>
+    <p>document.documentElement.body — длинный вариант.</p> 
+    <p>documentElement соответствует html узлу.</p>
+    <p>document.body — сокращённый вариант (получение элемента с помощью ссылок для быстрого доступа).</p>
+
+</details>       
+
+
+<details>
+    <summary>Что, кроме тегов, является узлами DOM?</summary>
+    <p>Переносы строк, табуляция, текстовое содержимое тегов, атрибуты тегов, комментарий — всё, что содержит HTML, является DOM-узлами.</p>
+</details>
+<details>
+    <summary>Как будет выглядеть ссылка <a href="#" target="_blank">Ссылка</a> в виде DOM-объекта?</summary>
+    <p><pre>{
+  a: {
+    href: '#',
+    target: '_blank',
+    textContent: 'Ссылка'
+  }
+}
+</pre></p>
+</details>
+<details>
+    <summary>Какой узел является корнем DOM-дерева?</summary>
+    <p>Корень DOM-дерева — узел document.</p>
+</details>
+<details>
+    <summary>С помощью какого свойства можно получить все дочерние элементы узла?</summary>
+    <p>Получить дочерние элементы DOM-узла можно с помощью свойства children, например, console.log(body.children) выведет все узлы, вложенные в <body>.
+</p>
+</details>
+<h2>JavaScript в браузере</h2>
+<details>
+    <summary>Как работают методы querySelector и querySelectorAll?</summary>
+    <p><pre>Метод querySelector принимает CSS-селектор и возвращает первый подходящий элемент. Он понимает любые CSS-селекторы и вызывается так:
+
+// Поиск элемента по классу
+const price = document.querySelector('.price');
+
+     
+Метод querySelectorAll работает так же, разница лишь в том, что querySelectorAll вернёт все элементы (коллекцию) с заданным селектором:
+
+// Поиск списка элементов по классу
+const productItems = document.querySelectorAll('.product__item');</pre></p>
+</details>
+<details>
+    <summary>Как добавить класс элементу с помощью JS?</summary>
+    <p><pre>Добавить класс элементу можно с помощью метода classList.add:
+
+// Ищем элемент на странице:
+const product = document.querySelector('.product');
+
+// Добавляем класс (без точки перед названием класса):
+product.classList.add('product--sale');</pre></p>
+</details>
+<details>
+    <summary>С помощью какого метода можно создать новый элемент?</summary>
+    <p><pre>Создать новый элемент можно с помощью метода createElement() объекта document:
+
+// Например, создадим новый элемент списка:
+const card = document.createElement('li');</pre></p>
+</details>    
+<details>
+    <summary>Как добавить новый элемент на страницу?</summary>
+    <p><pre>Добавить новый элемент на страницу можно, например, с помощью метода appendChild():
+
+// Ищем элемент, в который хотим поместить новый элемент
+const list = document.querySelector('.cards');
+
+// Создаём новый элемент
+const card = document.createElement('li');
+
+// Добавляем элемент card в список list
+list.appendChild(card);</pre></p>
+</details> 
+<details>
+    <summary>Как вывести текстовое содержимое элемента или добавить новый текст элементу?</summary>
+    <p>Для того, чтобы вывести текст элемента или перезаписать его, нужно использовать свойство textContent:
+
+&lt;p>Текст&lt;/p></p>
+<p><pre>const p = document.querySelector('p');
+console.log(p.textContent);  // Выведет: Текст
+
+p.textContent = 'Новый текст';
+console.log(p.textContent);  // Выведет: Новый текст</pre></p>
+</details>     
+<h2>События</h2>     
+<details>
+    <summary>Какой метод используется для добавления обработчика события на элемент?</summary>
+    <p><pre>Метод addEventListener:
+
+button.addEventListener('click', function () {
+  // Инструкции
+});</pre></p>
+</details>
+<details>
+    <summary>Что такое объект Event?</summary>
+    <p>Объект Event — параметр функции-обработчика. Он передаётся браузером в эту функцию в момент наступления события. Этот объект содержит много полезных свойств и методов о событии. Например, значение положения курсора мыши, информацию о нажатой клавише или позицию скролла.
+</p>
+</details>     
+<details>
+    <summary>С помощью какого метода можно отменить действие браузера по умолчанию?</summary>
+    <p><pre>Отменить действие браузера по умолчанию можно с помощью метода preventDefault():
+
+commentForm.addEventListener('submit', function (evt) {
+  evt.preventDefault(); // Отменяем отправку формы по умолчанию
+
+  // Какие-то действия ниже
+});</pre></p>
+</details>
+  <p><a href="index.html">На главную</a></p>   
+</body>
+</html>

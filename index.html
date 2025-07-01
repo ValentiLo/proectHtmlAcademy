@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. DOM и события</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>6. DOM и события</h1>  
+  <ol>
+    <li><a href="6.1. Основы CSS.html">6.1. Основы CSS</a></li>
+    <li><a href="6.2. Селекторы. Знакомство.html">6.2. Селекторы. Знакомство</a></li>
+    <li><a href="6.3. Что такое DOM.html">6.3. Что такое DOM</a></li>
+    <li><a href="6.4. DOM-дерево.html">6.4. DOM-дерево</a></li>
+    <li><a href="6.5. JavaScript в браузере.html">6.5. JavaScript в браузере</a></li>
+    <li><a href="6.6. Знакомство с событиями.html">6.6. Знакомство с событиями</a></li>
+    <li><a href="6.7. Шаблоны и данные.html">6.7. Шаблоны и данные</a></li>
+    <li><a href="6.8. Коллекции и свойства элементов.html">6.8. Коллекции и свойства элементов</a></li>
+    <li><a href="6.9. Вопросы по DOM и событиям для самопроверки.html">6.9. Вопросы по DOM и событиям для самопроверки</a></li>
+    <li><a href="6.10. Поиск в деревьях.html">6.10. Поиск в деревьях</a></li>
+</ol>
+    <h1>7. Манипуляции с DOM</h1>
+    <ol>
+    <li><a href="7.1. Обзор вкладки Elements.html">7.1. Обзор вкладки Elements</a></li>
+    <li><a href="7.2. DOM и разметка.html">7.2. DOM и разметка</a></li>
+    <li><a href="7.3. Манипуляции с DOM.html">7.3. Манипуляции с DOM</a></li>
+    <li><a href="7.4. Живые и неживые коллекции в JavaScript.html">7.4. Живые и неживые коллекции в JavaScript</a></li>
+    <li><a href="7.5. DOM. Модификация.html">7.5. DOM. Модификация</a></li>
+    <li><a href="7.6. Манипуляции с DOM.html">7.6. Манипуляции с DOM</a></li>
+    <li><a href="7.7. DOM. Рождение.html">7.7. DOM. Рождение</a></li>
+    <li><a href="7.8. Нюансы заполнения шаблонов данными.html">7.8. Нюансы заполнения шаблонов данными</a></li>
+    <li><a href="7.9. Учебный проект: нас орда. Продолжение.html">7.9. Учебный проект: нас орда. Продолжение</a></li>
+    <li><a href="7.10. Отрисуй меня полностью (часть 1).html">7.10. Отрисуй меня полностью (часть 1)</a></li>
+    <li><a href="7.11. Отрисуй меня полностью (часть 2).html">7.11. Отрисуй меня полностью (часть 2)</a></li>
+    <li><a href="7.12. Шаблонные строки.html">7.12. Шаблонные строки</a></li>
+    </ol>
+    <h1>8. Работа с событиями</h1>
+    <ol>
+    <li><a href="8.1. Формы. Знакомство.html">8.1. Формы. Знакомство</a></li>
+    <li><a href="8.2. Формы. Погружение.html">8.2. Формы. Погружение</a></li>
+    <li><a href="8.3. Действия браузера по умолчанию.html">8.3. Действия браузера по умолчанию</a></li>
+    <li><a href="8.4. Делегирование событий.html">8.4. Делегирование событий</a></li>
+    <li><a href="8.5. Как посмотреть обработчики на элементе.html">8.5. Как посмотреть обработчики на элементе</a></li>
+    <li><a href="8.6. Работа с событиями.html">8.6. Работа с событиями</a></li>
+    <li><a href="8.7. Учебный проект: обработка событий.html">8.7. Учебный проект: обработка событий</a></li>
+    <li><a href="8.8. Учебный проект: каждый охотник желает знать.html">8.8. Учебный проект: каждый охотник желает знать</a></li>
+    <li><a href="8.9. Учебный проект: валидация формы.html">8.9. Учебный проект: валидация формы</a></li>
+    <li><a href="8.10. Библиотека для валидации форм PristineJS.html">8.10. Библиотека для валидации форм PristineJS</a></li>
+    <li><a href="8.11. Валидация формы с помощью PristineJS.html">8.11. Валидация формы с помощью PristineJS</a></li>
+    <li><a href="8.12. Получаем обновления от Кекса.html">8.12. Получаем обновления от Кекса</a></li>
+    <li><a href="8.13. Правда или действие (часть 1).html">8.13. Правда или действие (часть 1)</a></li>
+    <li><a href="8.14. Правда или действие (часть 2).html">8.14. Правда или действие (часть 2)</a></li>
+    <li><a href="8.15. Фазы событий.html">8.15. Фазы событий</a></li>
+    <li><a href="8.16. Делегирование.html">8.16. Делегирование</a></li>
+    <li><a href="8.17. Прокрутка и операторы.html">8.17. Прокрутка и операторы</a></li>
+    <li><a href="8.18. Джейк Арчибальд, «В цикле», YouTube (русские субтитры).html">8.18. Джейк Арчибальд, «В цикле», YouTube (русские субтитры)</a></li>
+   
+</ol>
+    <h1>9. Внешние API и сторонние библиотеки</h1>
+    <ol>
+    <li><a href="9.1. Понятие API.html">9.1. Понятие API</a></li>
+    <li><a href="9.2. Внешние API и сторонние библиотеки.html">9.2. Внешние API и сторонние библиотеки</a></li>
+    <li><a href="9.3. Интерактивная карта.html">9.3. Интерактивная карта</a></li>
+    <li><a href="9.4. Слайдер для выбора значения.html">9.4. Слайдер для выбора значения</a></li>
+    <li><a href="9.5. Получаем обновления от Кекса.html">9.5. Получаем обновления от Кекса</a></li>
+    <li><a href="9.6. Помощь друга.html">9.6. Помощь друга</a></li>
+    <li><a href="9.7. Документация JavaScript API Яндекс.Карт.html">9.7. Документация JavaScript API Яндекс.Карт</a></li>
+    <li><a href="9.8. Документация Google Maps JavaScript API.html">9.8. Документация Google Maps JavaScript API</a></li>
+    <li><a href=".html"></a></li>
+ 
+</ol>
+    <h1>10. Сеть</h1>
+    <ol>   
+    <li><a href="10.1. Протокол HTTP.html">10.1. Протокол HTTP</a></li>
+    <li><a href="10.2. JSON.html">10.2. JSON</a></li>
+    <li><a href="10.3. Исключения.html">10.3. Исключения</a></li>
+    <li><a href="10.4. Обзор вкладки Network.html">10.4. Обзор вкладки Network</a></li>
+    <li><a href="10.5. Вопросы по работе с сетью для самопроверки.html">10.5. Вопросы по работе с сетью для самопроверки</a></li>
+    <li><a href="10.6. Практика выполнения HTTP-запросов.html">10.6. Практика выполнения HTTP-запросов</a></li>
+    <li><a href="10.7. Безопасность. XSS (Cross-site-scripting).html">10.7. Безопасность. XSS (Cross-site-scripting)</a></li>
+   
+</ol>
+<h1>11. Асинхронность. Работа с сетью</h1>
+    <ol>
+     <li><a href="11.1. Синхронные и асинхронные операции.html">11.1. Синхронные и асинхронные операции</a></li>
+    <li><a href="11.1. Синхронные и асинхронные операции.html">11.1. Синхронные и асинхронные операции</a></li>
+    <li><a href="11.3. Промисы.html">11.3. Промисы</a></li>
+    <li><a href="11.4. Цепочки промисов.html">11.4. Цепочки промисов</a></li>
+    <li><a href="11.5. Fetch API.html">11.5. Fetch API</a></li>
+    <li><a href="11.6. Асинхронность. Работа с сетью.html">11.6. Асинхронность. Работа с сетью</a></li>
+    <li><a href="11.7. XMLHttpRequest → fetch.html">11.7. XMLHttpRequest → fetch</a></li>
+    <li><a href="11.8. Учебный проект: pimp my mage.html">11.8. Учебный проект: pimp my mage</a></li>
+    <li><a href="11.9. Динамические стили элементов.html">11.9. Динамические стили элементов</a></li>
+    <li><a href="11.10. Глобальный объект FormData для сбора данных с формы, на MDN.html">11.10. Глобальный объект FormData для сбора данных с формы, на MDN</a></li>
+    <li><a href="11.11. Синтаксис и методы объектов FormData, на MDN.html">11.11. Синтаксис и методы объектов FormData, на MDN</a></li>
+    <li><a href="11.12. Использование объектов FormData на практике, на MDN.html">11.12. Использование объектов FormData на практике, на MDN</a></li>
+    <li><a href="11.13. Надо подкачаться.html">11.13. Надо подкачаться</a></li>
+    <li><a href="11.14. setTimeout и setInterval.html">11.14. setTimeout и setInterval</a></li>
+    <li><a href="11.15. Функции обратного вызова на практике.html">11.15. Функции обратного вызова на практике</a></li>
+    <li><a href="11.16. Методы глобального объекта Promise.html">11.16. Методы глобального объекта Promise</a></li>
+    <li><a href="11.17. Async/Await.html">11.17. Async/Await</a></li>
+   
+</ol>
+<h1>12. Обратная связь и оптимизация</h1>
+    <ol>
+     
+    <li><a href="12.1. Сортировка массива, на MDN.html">12.1. Сортировка массива, на MDN</a></li>
+    <li><a href="12.2. Фильтрация массива, на MDN.html">12.2. Фильтрация массива, на MDN</a></li>
+    <li><a href="12.3. Пропуск кадров и устранение дребезга.html">12.3. Пропуск кадров и устранение дребезга</a></li>
+    <li><a href="12.4. Обратная связь и оптимизация.html">12.4. Обратная связь и оптимизация</a></li>
+    <li><a href="12.5. Учебный проект: похожий.html">12.5. Учебный проект: похожий</a></li>
+    <li><a href="12.6. Учебный проект: устранение дребезга.html">12.6. Учебный проект: устранение дребезга</a></li>
+    <li><a href="12.7. Учебный проект: выкладываем фото.html">12.7. Учебный проект: выкладываем фото</a></li>
+    <li><a href="12.8. Получаем функции от Кекса.html">12.8. Получаем функции от Кекса</a></li>
+    <li><a href="12.9. Перламутровые пуговицы.html">12.9. Перламутровые пуговицы</a></li>
+    <li><a href="12.11. Не разводите сырость (File API), Александр Сушко, СКБ Контур.html">12.11. Не разводите сырость (File API), Александр Сушко, СКБ Контур</a></li>
+</ol>
+<h1>13. Финал</h1>
+    <ol>
+     <li><a href="13.1. Точка с запятой.html">13.1. Точка с запятой</a></li>
+    <li><a href="13.2. Строгий режим.html">13.2. Строгий режим</a></li>
+    <li><a href="13.3. Финал.html">13.3. Финал</a></li>
+    <li><a href="13.4. Функции-конструкторы.html">13.4. Функции-конструкторы</a></li>
+    <li><a href="13.5. Введение в прототипы.html">13.5. Введение в прототипы</a></li>
+    <li><a href="13.6. jQuery.html">13.6. jQuery</a></li>
+    <li><a href="13.7. jQuery UI.html">13.7. jQuery UI</a></li>
+    <li><a href="13.8. Webpack.html">13.8. Webpack</a></li>
+    <li><a href="13.9. Babel.html">13.9. Babel</a></li>
+    
+</ol>
+<h1> JavaScript. Архитектура клиентских приложений</h1>
+    <ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+
+<h1><a href="https://up.htmlacademy.ru/profession/react-lite/2/lite-javascript-3/2">JavaScript. Разработка сложных клиентских приложений</a></h1>
+<h1>1. Знакомство с TypeScript</h1>
+<ol>
+  <li><a href="1.1. Введение в типизацию.html">1.1. Введение в типизацию</a></li>
+    <li><a href="1.2. Система типов.html">1.2. Система типов</a></li>
+    <li><a href="1.3. Знакомство с TypeScript.html">1.3. Знакомство с TypeScript</a></li>
+    <h4>Демонстрации</h4>
+    <li><a href="1.4. Введение в TypeScript.html">1.4. Введение в TypeScript</a></li>
+    <li><a href="1.5. TypeScript: Аннотации и вывод типов.html">1.5. TypeScript: Аннотации и вывод типов</a></li>
+    <li><a href="1.6. TypeScript: any.html">1.6. TypeScript: any</a></li>
+    <li><a href="1.7. TypeScript: Функции.html">1.7. TypeScript: Функции</a></li>
+    <li><a href="1.8. TypeScript. Псевдонимы типов. Объединение. Пересечение.html">1.8. TypeScript. Псевдонимы типов. Объединение. Пересечение</a></li>
+    <li><a href="1.9. Демо-проект. Создание проекта с помощью CRA.html">1.9. Демо-проект. Создание проекта с помощью CRA</a></li>
+    <li><a href="1.10. Выбор проекта и настройка рабочего окружения.html">1.10. Выбор проекта и настройка рабочего окружения</a></li>
+    <li><a href="1.11. Вооружён, значит опасен.html">1.11. Вооружён, значит опасен</a></li>
+    <li><a href="1.12. TypeScript. Перечисления (enums).html">1.12. TypeScript. Перечисления (enums)</a></li>
+    <li><a href="1.13. TypeScript. Кортежи (tuples).html">1.13. TypeScript. Кортежи (tuples)</a></li>
+    <li><a href="1.14. TypeScript. Интерфейсы.html">1.14. TypeScript. Интерфейсы</a></li>
+    <li><a href="1.15. Псевдонимы типов и интерфейсы.html">1.15. Псевдонимы типов и интерфейсы</a></li>
+    <li><a href="1.16. Create React App.html">1.16. Create React App</a></li>
+    <li><a href="1.17. Дженерики.html">1.17. Дженерики</a></li>
+    <li><a href="1.18. TypeScript: Дженерики.html">1.18. TypeScript: Дженерики</a></li>
+    <li><a href="1.19. TypeScript. Приведение типов и вспомогательные функции.html">1.19. TypeScript. Приведение типов и вспомогательные функции</a></li>
+    <li><a href="1.20. Официальная документация.html">1.20. Официальная документация</a></li>
+    <li><a href="1.21. TypeScript Handbook (Карманная книга по TypeScript).html">1.21. TypeScript Handbook (Карманная книга по TypeScript)</a></li>
+    <li><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.html">1.22. TypeScript for JavaScript programmers</a></li>
+    <li><a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types.html">1.23. Union Types</a></li>
+    <li><a href="https://up.htmlacademy.ru/profession/react-lite/2/lite-javascript-3/2/module/1/item/24.html">1.24. Доклад. TypeScript — Seeing Past the Hype</a></li>
+</ol>
+<h1>2. React</h1>
+<ol>
+    
+    <li><a href="2.1. Фреймворки и библиотеки.html">2.1. Фреймворки и библиотеки</a></li>
+    <li><a href="2.2. Virtual DOM.html">2.2. Virtual DOM</a></li>
+    <li><a href="2.3. React.html">2.3. React</a></li>
+    <h4>Демонстрации</h4>
+    <li><a href="2.4. Введение в React.html">2.4. Введение в React</a></li>
+    <li><a href="2.5. Различия JSX и HTML.html">2.5. Различия JSX и HTML</a></li>
+    <li><a href="https://github.com/htmlacademy/guess-melody-demo/commits/season/10?after=3b3cc71c2bc6a43b5d117a98ec6d90995fd9a111+69&branch=season%2F10&qualified_name=refs%2Fheads%2Fseason%2F10">2.6. Демо-проект. Создание компонентов. Коммиты с 2.1 по 2.2</a></li>
+    <li><a href="https://ru.legacy.reactjs.org/docs/introducing-jsx.html">2.7. Документация. Знакомство с JSX</a></li>
+    <li><a href="https://ru.legacy.reactjs.org/docs/components-and-props.html">2.8. Документация. Компоненты и пропсы</a></li>
+    <li><a href="2.9. Псевдонимы типов и интерфейсы.html">2.9. Псевдонимы типов и интерфейсы</a></li>
+    <li><a href="2.10. Начинаем программировать.html">2.10. Начинаем программировать</a></li>
+    <li><a href="2.11. React DevTools.html">2.11. React DevTools</a></li>
+    <li><a href="2.12. Типизация children.html">2.12. Типизация children</a></li>
+    <li><a href="https://ru.legacy.reactjs.org/docs/rendering-elements.html">2.13. Документация React. Рендеринг элементов</a></li>
+    <li><a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html">2.14. Документация React. Everyday Type</a></li>
+    <li><a href="https://www.typescriptlang.org/docs/handbook/2/narrowing.html">2.15. Документация TypeScript. Narrowing</a></li>
+    <li><a href="https://www.typescriptlang.org/docs/handbook/2/functions.html">2.16. Документация TypeScript. More on Function</a></li>
+</ol>
+<h1>3. Маршрутизация (React Router)</h1>
+<ol>
+    <li><a href="3.1. Маршрутизация (React Router).html">3.1. Маршрутизация (React Router)</a></li>
+    <li><a href="https://github.com/htmlacademy/intensive-design-demo/tree/react-router">3.2. Знакомство с React Router 6 (GitHub)15</a></li>
+    <li><a href="https://github.com/htmlacademy/intensive-design-demo/tree/react-router_private-route">3.3. Приватные маршруты в React Router 6 (GitHub)</a></li>
+    <li><a href="https://github.com/htmlacademy/guess-melody-demo/commits/season/10?after=3b3cc71c2bc6a43b5d117a98ec6d90995fd9a111+69&branch=season%2F10&qualified_name=refs%2Fheads%2Fseason%2F10">3.4. Демо-проект. Маршрутизация. Коммиты с 3.1 по 3.5</a></li>
+    <li><a href="3.5. Компоненты в React.html">3.5. Компоненты в React</a></li>
+    <li><a href="3.6. JSX.html">3.6. JSX</a></li>
+    <li><a href="3.7. JSX. Больше возможностей.html">3.7. JSX. Больше возможностей</a></li>
+    <li><a href="3.8. React-router.html">3.8. React-router</a></li>
+    <li><a href="3.9. Маршрут по тайным тропам.html">3.9. Маршрут по тайным тропам</a></li>
+    <li><a href="https://reactrouter.com/6.22.3/start/tutorial">3.10. React Router 6. Tutorial</a></li>
+    <li><a href="https://reactrouter.com/">3.11. Документация. React Router (англ.)</a></li>
+    <li><a href="https://habr.com/ru/companies/kts/articles/598835/">3.12. Что нового в React Router 6</a></li>
+    <li><a href="https://blog.logrocket.com/migrating-react-router-v6-guide/">3.13. Migrating to React Router v6. A complete guide</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/API/Location">3.14. MDN. Location API</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/API/History_API">3.15. MDN. History API</a></li>
+    <li><a href="https://css-tricks.com/using-the-html5-history-api/">3.17. Использование History API (англ.)</a></li>
+    
+</ol>
+<h1>4. React-компоненты. Hooks</h1>
+<ol>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+<h1>5. React и паттерны</h1>
+<ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+<h1>6. Redux</h1>
+<ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+<h1>7. Асинхронность в Redux</h1>
+<ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+<h1>8. Оптимизация производительности</h1>
+<ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+<h1>9. Тестирование React</h1>
+<ol>
+  <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+    <li><a href=".html">15</a></li>
+</ol>
+</body>
+</html>

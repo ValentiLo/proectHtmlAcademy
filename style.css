@@ -1,0 +1,9 @@
+  body{background:aliceblue;}
+  h1,h2{background: pink;text-align: center;margin: 5px;}
+  p,pre{background: paleturquoise;}
+  summary{background: seashell;margin: 5px;}
+  a{background: rgb(211, 233, 243); padding: 2px;}
+  div{display: flex;justify-content: space-between;}
+img{margin-left:100px;}
+  code{background-color: aliceblue;border: 1px solid lightgrey; border-radius: 5px; padding: 2px; font-size: 100%;}
+  span{border: 1px solid lightgrey; border-radius: 5px; padding: 5px; font-size: 110%;}
