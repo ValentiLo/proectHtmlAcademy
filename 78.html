@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .el {
+    background: #bbbbff;
+    border: 20px solid #6666FF;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    font: bold 60px Arial;
+    line-height: 110px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.pool {
+    background: #e9e9f0;
+    box-sizing: border-box;
+    height: 330px;
+    margin: 20px;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+     <div class="pool pool-1">
+        <div class="el el-1"><span>0</span></div>
+        <div class="el el-2"><span>1</span></div>
+        <div class="el el-3"><span>2</span></div>
+        <div class="el el-4"><span>3</span></div>
+        <div class="el el-5"><span>4</span></div>
+        <div class="el el-6"><span>5</span></div>
+    </div>
+
+    <div class="pool pool-2">
+
+    </div>
+
+    <p>С помощью appendChild можно даже перемещать элементы внутри блока!</p>
+    <p><a href="index.html">На главную</a></p>
+    <script>
+       const pools = document.querySelectorAll('.pool');
+const blocks = document.querySelectorAll('.el');
+
+pools[0].removeChild(blocks[0]);
+pools[1].appendChild(blocks[0]); // Мы сначала вставили элемент под номером 0
+pools[1].appendChild(blocks[1]); // Затем элемент под номером 1
+pools[1].appendChild(blocks[0]); // А после снова элемент под номером 0, из-за чего он "переместился"
+ 
+    </script>
+</body>
+</html>
