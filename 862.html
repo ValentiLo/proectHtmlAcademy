@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+    .el {
+    background: #bbbbff;
+    border: 20px solid #6666FF;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    font: bold 60px Arial;
+    line-height: 110px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.pool {
+    background: #e9e9f0;
+    box-sizing: border-box;
+    height: 330px;
+    margin: 20px;
+    padding: 10px;
+}
+
+</style>
+<body>
+
+   
+    <div class="pool pool-1">
+        <div class="el"><span>0</span></div>
+        <div class="el"><span>1</span></div>
+        <div class="el"><span>2</span></div>
+        <div class="el"><span>3</span></div>
+        <div class="el"><span>4</span></div>
+    </div>
+
+    <div class="pool pool-2">
+        
+    </div>
+
+    <script>
+     const pool = document.querySelector('.pool');
+
+const sixthElement = document.createElement('div'); // Создаём элемент div
+sixthElement.classList.add('el'); // Добавляем класс 'el'
+sixthElement.innerHTML = '<span>5</span>'; // Объявляем содержимое
+
+pool.appendChild(sixthElement);
+ </script>
+ <p>
+    Ещё один способ создания элементов — document.createElement. Для этого сначала нужно создать нужный элемент, заполнить его, а потом вставлять в DOM. Причём использовать уже нужно метод для вставки элементов — appendChild.
+ </p>
+    <p><a href="index.html">На главную</a></p>
+</body>
+
+</html>

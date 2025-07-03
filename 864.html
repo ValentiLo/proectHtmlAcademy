@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+    .el {
+    background: #bbbbff;
+    border: 20px solid #6666FF;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    font: bold 60px Arial;
+    line-height: 110px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.pool {
+    background: #e9e9f0;
+    box-sizing: border-box;
+    height: 330px;
+    margin: 20px;
+    padding: 10px;
+}
+
+</style>
+<body>
+
+     <div class="pool pool-1">
+        <div class="el el-1"><span>0</span></div>
+        <div class="el el-2"><span>1</span></div>
+        <div class="el el-3"><span>2</span></div>
+        <div class="el el-4"><span>3</span></div>
+        <div class="el el-5"><span>4</span></div>
+        <div class="el el-6"><span>5</span></div>
+    </div>
+
+    <div class="pool pool-2">
+        
+    </div>
+
+    <template id="element-template">
+      <div class="el">
+        <span><!--Номер элемента--></span>
+      </div>
+    </template>
+
+    <script>
+     const pools = document.querySelectorAll('.pool');
+
+ </script>
+ <p>
+   Зачастую, чтобы создавать элементы по образу и подобию (на основе шаблона), используют специальный элемент в вёрстке, из которого можно копировать структуру и заполнять её необходимыми данными. Для этих целей служит тег <template>. 
+ </p>
+    <p><a href="index.html">На главную</a></p>
+</body>
+
+</html>
