@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Нюансы заполнения шаблонов данными</title>
+  <style>
+    .emojis {
+      display: inline-flex;
+      margin: 0.5em 1em;
+      padding: 0.1em 0.2em 0.25em;
+      list-style: none;
+      font-size: 2em;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+      border-radius: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="emojis">
+    <li class="emoji emoji--smile">🙂</li>
+    <li class="emoji emoji--neutral">😐</li>
+    <li class="emoji emoji--frowning">🙁</li>
+    <li class="emoji emoji--angry">😠</li>
+    <li class="emoji emoji--crying">😭</li>
+  </ul>
+<p>Добавим вновь созданному пункту класс emoji и модификатор emoji-- на основе эмоции из массива.</p>
+<p>
+Но как добавить смайлик? А точнее, откуда его взять? Прежние же пункты списка из шаблона мы уже удалили. Вот он, нюанс подхода с удалением всего...</p>
+<p><a href="index.html">На главную</a></p>
+  <script>
+const userEmotions = [
+  'smile',
+  'crying',
+];
+
+const emojiContainer = document.querySelector('.emojis');
+
+emojiContainer.innerHTML = '';
+
+userEmotions.forEach((userEmotion) => {
+  const emojiListItem = document.createElement('li');
+
+  emojiListItem.classList.add('emoji');
+  emojiListItem.classList.add('emoji--' + userEmotion);
+});
+
+
+  </script>
+</body>
+
+</html>
